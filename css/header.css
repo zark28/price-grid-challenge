@@ -1,0 +1,22 @@
+header {
+  width: 100%;
+  padding: 20px 40px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  word-spacing: 4px;
+}
+
+.moneyback {
+  color: var(--primary2);
+}
+.access {
+  color: var(--secondary2);
+}
+
+@media screen and (max-width: 768px) {
+  header > p {
+    margin-bottom: 1rem;
+  }
+}

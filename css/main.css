@@ -1,0 +1,90 @@
+main {
+  background-color: var(--primary1);
+  display: flex;
+  align-items: center;
+  /* width: 100%; */
+}
+
+main > div {
+  display: flex;
+  text-align: left;
+  height: 100%;
+  width: 50%;
+}
+
+.textcontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+  /* SUBSCRIOPTION SECTION */
+}
+.subs {
+  padding: 20px 40px;
+  height: 100%;
+}
+
+.price span {
+  font-weight: 700;
+  font-size: 40px;
+}
+
+.price {
+  color: hsla(203, 44%, 93%, 0.39);
+}
+
+button {
+  border-radius: 5px;
+  font-weight: 700;
+  background-color: var(--primary2);
+  border: none;
+  outline: none;
+  padding: 15px 90px;
+  box-shadow: 2px 2px 6px 1px rgba(0, 0, 0, 0.548);
+}
+button:hover {
+  color: var(--primary2);
+  background-color: var(--secondary1);
+  transition: 5ms ease-in-out;
+}
+
+/* WHY US SECTION */
+
+.whyus {
+  padding: 20px 40px;
+  align-items: center;
+  padding-left: 80px;
+  background-color: hsla(217, 22%, 67%, 0.507);
+  height: 100%;
+}
+
+.whyus .textcontainer {
+  justify-content: space-evenly;
+  height: 100%;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 80%;
+  list-style: none;
+}
+
+/* media queries */
+@media screen and (max-width: 768px) {
+  main {
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: auto;
+  }
+  main > div {
+    justify-content: center;
+    height: auto;
+    width: 100%;
+  }
+
+  main :is(p, li) {
+    margin-bottom: 1rem;
+  }
+}
